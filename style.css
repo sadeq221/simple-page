@@ -1,0 +1,427 @@
+* {
+    font-family: avenir;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'sport';
+    src: url('/fonts/EduVICWANTBeginner-VariableFont_wght.ttf');
+    font-style: normal;
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'mochiy';
+    src: url('/fonts/MochiyPopOne-Regular.ttf');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'avenir';
+    src: url('/fonts/Avenir\ Regular.ttf');
+    font-style: normal;
+}
+
+
+/* General Classes */
+
+.rotate {
+    rotate: -90deg;
+}
+
+
+/* General Styling */
+
+a {
+    text-decoration: none;
+}
+
+p {
+    font-size: 20px;
+    color: #707070;
+}
+
+i:hover {
+    color: rgb(162, 216, 47);
+}
+
+
+/* mobile */
+
+
+/* Header */
+
+a {
+    text-decoration: none;
+}
+
+li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px;
+    font-weight: bold;
+}
+
+#header {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    width: 100%;
+    height: 100px;
+    color: #fff;
+    background-color: rgba(84, 128, 53, 0.861);
+}
+
+#header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    background-image: url(/1-wIcons.jpg);
+    background-size: 300px;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    opacity: 0.6;
+}
+
+#topMenu {
+    display: none;
+}
+
+#menuLines {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 40px 0 0;
+}
+
+#menuLines i {
+    font-size: 50px;
+}
+
+#menuLines :hover {
+    color: rgb(162, 216, 47);
+    cursor: pointer;
+}
+
+#smMenu {
+    position: relative;
+    color: #fff;
+    width: 100%;
+    height: fit-content;
+    background-color: rgba(84, 128, 53, 0.861);
+}
+
+#smMenu ul {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+}
+
+#smMenu li {
+    margin: 0;
+    padding: 10px 0;
+    padding-left: 20px;
+    display: block;
+    border-bottom: 1px solid #fff;
+}
+
+#smMenu a {
+    color: #fff;
+    font-size: 20px;
+}
+
+#smMenu a:hover {
+    color: rgb(162, 216, 47);
+    cursor: pointer;
+}
+
+#logo {
+    font-family: sport;
+    font-size: 40px;
+    margin: 20px 0 0 40px;
+}
+
+#logo {
+    color: #fff;
+}
+
+
+/* Main */
+
+#introduce {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    padding-bottom: 0;
+}
+
+#text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#text h1 {
+    text-align: center;
+    margin: 20px;
+}
+
+#text h3 {
+    text-align: center;
+    margin: 20px;
+}
+
+#text p {
+    text-align: center;
+}
+
+#text p:first-of-type {
+    margin-top: 10px;
+}
+
+#allSportImg {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin: 30px 0;
+}
+
+#btnDiv {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+#vtBtn {
+    font-size: 23px;
+    margin: 30px;
+    border: none;
+    color: #fff;
+    width: 90%;
+    height: 50px;
+    background-color: rgba(98, 150, 61, 0.861);
+    border-radius: 50px;
+}
+
+#vtBtn:hover {
+    border: 1px solid rgba(98, 150, 61, 0.861);
+    color: rgba(98, 150, 61, 0.861);
+    background-color: #fff;
+}
+
+#trutorials {
+    position: relative;
+}
+
+#trutorialsImg {
+    position: relative;
+    height: 300px;
+    background-color: rgba(5, 25, 69, 0.592);
+}
+
+#trutorialsImg::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.5;
+    background-size: 100%;
+    background-image: url(/images/Coaching-Mistakes-1024x536.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#trutorialsItems {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: -100px;
+    position: relative;
+}
+
+.trutorial {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin: 30px 0;
+    height: fit-content;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgb(143, 143, 143);
+}
+
+.trutorial a {
+    font-size: 25px;
+    margin: 10px;
+    color: #2a2a2a;
+}
+
+.trutorial a:hover {
+    color: rgba(98, 150, 61, 0.861);
+}
+
+.trutorial img {
+    width: 25%;
+    margin: 10px;
+}
+
+.trutorial p {
+    text-align: center;
+    margin: 10px 5px;
+}
+
+#social {
+    padding: 30px 0;
+    margin-top: -80px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+#social::after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background-color: rgb(220, 220, 220);
+    border-radius: 100%;
+    z-index: -1;
+}
+
+#social i {
+    font-size: 30px;
+    margin: 10px;
+}
+
+#social p {
+    margin-bottom: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #111;
+}
+
+
+/* Footer */
+
+footer {
+    padding: 30px 0 0 0;
+    width: 100%;
+    background-color: #3a3a3a;
+    color: #eaeaea;
+}
+
+.footerSec {
+    margin: 20px;
+}
+
+.footerSec h2 {
+    margin: 10px;
+}
+
+.footerSec p {
+    color: #eaeaea;
+    margin: 10px;
+}
+
+.footerSec a {
+    color: #eaeaea;
+    display: block;
+    margin: 10px;
+}
+
+#copyRight {
+    border-top: 1px solid #eaeaea;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#copyRight p {
+    margin: 0;
+    color: #eaeaea;
+}
+
+
+/* Desktop */
+
+@media screen and (min-width: 1001px) {
+    /* Header*/
+    #topMenu {
+        display: inline-block;
+        width: fit-content;
+        font-family: all;
+        color: #fff;
+        height: fit-content;
+        margin: 25px 40px;
+    }
+    #topMenu a {
+        color: #fff;
+        font-size: 25px;
+    }
+    #menuLines {
+        display: none;
+    }
+    /* Header*/
+    #introduce {
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+    #text {
+        width: 60%;
+    }
+    #allSportImg {
+        padding: 0 30px;
+        width: 40%;
+        margin: 0;
+    }
+    #allSportImg img {
+        width: 100%;
+    }
+    #vtBtn {
+        width: 50%;
+    }
+    #trutorialsItems {
+        flex-flow: row wrap;
+    }
+    .trutorial {
+        margin-left: 30px;
+        width: calc(100% / 3 - 60px);
+    }
+    .trutorial img {
+        width: 40%;
+    }
+    .trutorial:first-of-type,
+    .trutorial:nth-of-type(4) {
+        margin-left: 0;
+    }
+    /* Footer */
+    footer {}
+    #footerSections {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    .footerSec {
+        width: calc(100% / 3 - 80px);
+    }
+}
