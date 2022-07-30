@@ -79,7 +79,7 @@ li {
     top: 0;
     right: 0;
     z-index: -1;
-    background-image: url(/1-wIcons.jpg);
+    background-image: url(/images/1-wIcons.jpg);
     background-size: 300px;
     background-position: center;
     width: 100%;
@@ -414,7 +414,6 @@ footer {
         margin-left: 0;
     }
     /* Footer */
-    footer {}
     #footerSections {
         display: flex;
         flex-direction: row;
